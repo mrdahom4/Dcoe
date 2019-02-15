@@ -364,7 +364,7 @@ client.on('message', async (message) => {
                   if(!gg) return;
 
                      
-                      gg.send(`||@here||  \n \n الكود :\n\`\`\`js\n${lan}\`\`\`\n  **وصف الكود :\n ${md} \n \n تم صنعه من قبل : ${br} \n تم نشره من قبل : <@${message.author.id}> ** \n  \n __\` كل الحقوق محفوظة لدى Tree Codes\`__  `);
+                      gg.send(`@everyone | @here  \n \n الكود :\n\`\`\`js\n${lan}\`\`\`\n  **وصف الكود :\n ${md} \n \n تم صنعه من قبل : ${br} \n تم نشره من قبل : <@${message.author.id}> ** \n  \n __\` كل الحقوق محفوظة لدى Js - Codes\`__  `);
                   })
                 })
               })
