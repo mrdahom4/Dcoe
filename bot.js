@@ -328,52 +328,155 @@ client.on('message', async xkiller => {
     }).catch(console.error)
 })
 
-client.on('message', async (message) => {
+  client.on('message',async message => {
+ 
+  if(message.content.startsWith("#js")) {
 
-    if (message.content.startsWith('#js')) {
-            if(!message.member.roles.find('name', "Js - King Support", "Js - Support Gold", "Js - Support Plus", "Js - Support", "Js - Admin", "Js - Developer", "Js - Minister")) return message.reply(`**I can't complete this command because you don't have T | Developer Rank!**`);
+if(!message.channel.guild) return message.reply(' ');
 
-      await message.channel.send("**اكتب الكود بدون ايمبيد**").then(e => {
-      let filter = m => m.author.id === message.author.id
-      let lan = '';
-      let md = '';
-      let br = '';
-      let chaLan = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
-        .then(collected => {
-          lan = collected.first().content
-          collected.first().delete()
-          e.delete();
-          message.channel.send('**وصف الكود**').then(m => {
-          let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
-          .then(co => {
-            md = co.first().content
-            co.first().delete()
-            m.delete();
-            message.channel.send('**من صنعه؟**').then(ms => {
-            let br = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
-              .then(col => {
-                br = col.first().content
-                col.first().delete()
-                ms.delete()
-                
-                  message.channel.send('**جاري العرض ..**').then(b => {
-                  setTimeout(() => { 
-                    b.edit(`**تم العرض **`)
-                  },2000);
-                  var gg = message.guild.channels.find('name', 'codes-js')
-                  if(!gg) return;
+  let rank = message.guild.member(message.author).roles.find('name',"Js - King Support", "Js - Support Gold", "Js - Support Plus", "Js - Support", "Js - Admin", "Js - Developer", "Js - Minister");
 
-                     
-                      gg.send(`@everyone | @here  \n \n الكود :\n\`\`\`js\n${lan}\`\`\`\n  **وصف الكود :\n ${md} \n \n تم صنعه من قبل : ${br} \n تم نشره من قبل : <@${message.author.id}> ** \n  \n __\` كل الحقوق محفوظة لدى Js - Codes\`__  `);
-                  })
-                })
-              })
-            })
+  if (!rank) return message.channel.send(' ** يجب ان تمتلك رتبة سبورت لأستخدام هذا الأمر.**');
+
+  let jscodes = message.guild.channels.find(`name`, "codes-js");
+
+  if(!jscodes) return message.channel.send("لم اجد الروم الخاص بنشر الاكواد");
+
+    let filter = m => m.author.id === message.author.id;
+
+    let thisMessage;
+
+    let thisFalse;
+
+    message.channel.send(' **| من فضلك اكتب الكود الأن...  **').then(msg => {
+
+
+
+    message.channel.awaitMessages(filter, {
+
+      max: 1,
+
+      time: 90000,
+
+      errors: ['time']
+
+    })
+
+    .then(collected => {
+
+      collected.first().delete();
+
+      thisMessage = collected.first().content;
+
+      let boi;
+
+      msg.edit(' **| من فضلك اكتب وصف الكود الأن...  **').then(msg => {
+
+
+
+          message.channel.awaitMessages(filter, {
+
+            max: 1,
+
+            time: 90000,
+
+            errors: ['time']
+
           })
-        })
+
+          .then(collected => {
+
+            collected.first().delete();
+
+            boi = collected.first().content;
+
+            let boi2;
+
+            msg.edit(' **| من فضلك اكتب من صنع هذا الكود الأن... ✏ **').then(msg => {
+
+
+
+              message.channel.awaitMessages(filter, {
+
+                max: 1,
+
+                time: 90000,
+
+                errors: ['time']
+
+              })
+
+              .then(collected => {
+
+                collected.first().delete();
+
+              boi2 = collected.first().content;
+
+      msg.edit(' **| [ هل انت متأكد من نشر الكود؟ | [ نعم ] او [ لا**');
+
+ message.channel.awaitMessages(response => response.content === 'نعم' || 'لا' && filter,{
+
+        max: 1,
+
+        time: 90000,
+
+        errors: ['time']
+
       })
-    }
-  })
+
+      .then(collected => {
+
+        if(collected.first().content === 'لا') {
+
+          msg.delete();
+
+          message.delete();
+
+          thisFalse = false;
+
+        }
+
+        if(collected.first().content === 'نعم') {
+
+          if(thisFalse === false) return;
+
+          msg.edit(' تم بنجاح نشر كودك في روم الاكواد**');
+
+          collected.first().delete();
+
+          jscodes.send(`@everyone | @here
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**js - Codes ©**
+\`\`\`js
+${thisMessage}\`\`\`
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**وصف الكود**: ${boi}
+
+**تم النشر بواسطة**: ${message.author}
+
+**المصدر / الشخص الذي صنع الكود**: ${boi2}`);
+
+        }
+
+      }
+
+  );
+
+});
+
+    });
+
+  }
+
+    );
+
+  });
+
+}
+
+);
+
+})}});
 
 var antispam = require("anti-spam"); 
 antispam(client, {
@@ -1496,56 +1599,7 @@ https://pastebin.com/PfvYF1ak
 
 
 
-client.on('message',async message => {
- 
-let mention = message.mentions.members.first();
- 
-let Room = client.channels.get('545889783529078784');
- 
-if(message.content.startsWith("رفض")) {
- 
-if(message.guild.id !== '525434548939653151') return;
- 
- if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
- 
- 
-if(!mention) return message.reply("منشن شخص");
- 
- 
- 
-Room.send(`
-** العضو :** ${mention}
- لقد تم رفضك `);
- 
-}
- 
-});
- 
- 
-client.on('message',async message => {
- 
-let mention = message.mentions.members.first();
- 
-let Room = client.channels.get('545889783529078784');
- 
-if(message.content.startsWith("قبول")) {
- 
-if(message.guild.id !== '525434548939653151') return;
- 
- if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
- 
- 
-if(!mention) return message.reply("منشن شخص");
- 
- 
- 
-Room.send(`
-** العضو :** ${mention}
- لقد تم قبولك `);
- 
-}
- 
-});
+
 
 
 client.login(process.env.BOT_TOKEN);
