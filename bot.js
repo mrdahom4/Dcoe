@@ -37,7 +37,16 @@ client.on('ready', () => {
 
 
 
+client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "Js - Members");
+   member.addRole (role);
+  
+})
 
+Yousef.on ("guildMemberRemove", member => {
+   
+})
 
 var prefix = "#"
 client.on('message', async msg => {
