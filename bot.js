@@ -36,16 +36,7 @@ client.on('ready', () => {
 
 
 
-const p1rtly = new Discord.Client();
-p1rtly.on('message', message => {
-  if (message.content.startsWith('#join')) {
-    const voiceChannel1 = message.member.voiceChannel1;
-    voiceChannel1.join()
-      .then(connnection => {
 
-      });
-  }
-})
 
 
 var prefix = "#"
