@@ -441,11 +441,10 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
      if (message.content  === prefix + "help-js") {
           const embed = new Discord.RichEmbed()
  
- 
-   .setColor('RANDOM')
+ .setColor('#36393e')
   .setTimestamp()
  
-  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
   .addField("❧  **#help-js-source    ➺      ⦁ قسم السورس الأساسي** ⦁",' ‎ ')
    .addField("❧  **#help-js-admin     ➺      ⦁ قسم الأكواد الإدارية** ⦁",' ‎ ')
      .addField("❧  **#help-js-general   ➺      ⦁ قسم الأكواد العامة*** ⦁",' ‎ ')
@@ -469,7 +468,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           const embed = new Discord.RichEmbed()
  
  
-   .setColor('RANDOM')
+.setColor('#36393e')
   .setTimestamp()
  
   .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
@@ -592,7 +591,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           const embed = new Discord.RichEmbed()
  
  
-   .setColor('RANDOM')
+.setColor('#36393e')
   .setTimestamp()
  
  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
@@ -804,8 +803,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
      if (message.content  === prefix + "help-js-general") {
           const embed = new Discord.RichEmbed()
  
- 
-   .setColor('RANDOM')
+.setColor('#36393e')
   .setTimestamp()
  
  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
@@ -991,7 +989,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           const embed = new Discord.RichEmbed()
  
  
-   .setColor('RANDOM')
+.setColor('#36393e')
   .setTimestamp()
  
   .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
@@ -1101,7 +1099,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           const embed = new Discord.RichEmbed()
  
  
-   .setColor('RANDOM')
+.setColor('#36393e')
   .setTimestamp()
  
   .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
@@ -1166,8 +1164,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
      if (message.content  === prefix + "help-js-bc") {
           const embed = new Discord.RichEmbed()
  
- 
-   .setColor('RANDOM')
+ .setColor('#36393e')
   .setTimestamp()
  
   .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
@@ -1286,7 +1283,7 @@ client.on('message', message => {
         const embed = new Discord.RichEmbed()
  
  
- .setColor('RANDOM')
+.setColor('#36393e')
 .setTimestamp()
  
 .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
