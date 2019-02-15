@@ -491,7 +491,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
   client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-source-1") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -524,7 +524,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
     client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-source-2") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -546,7 +546,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
       client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-source-3") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -566,7 +566,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
         client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-source-4") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -621,7 +621,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-1") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -642,7 +642,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
             client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-2") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -662,7 +662,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
               client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-3") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -703,7 +703,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                   client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-5") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -721,7 +721,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
          client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-6") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -739,7 +739,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
            client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-7") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -759,7 +759,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-8") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -778,7 +778,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
           client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-admin-9") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -853,7 +853,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                         client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-general-2") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص **');
            
    
          
@@ -875,7 +875,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                     client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-general-3") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -897,7 +897,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                       client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-general-4") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -920,7 +920,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                     client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-general-5") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -939,7 +939,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                 client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-general-6") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -960,7 +960,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                     client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-general-7") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1014,7 +1014,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                       client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-welcome-1") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1035,7 +1035,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                         client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-welcome-2") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1056,7 +1056,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                       client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-welcome-3") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1076,7 +1076,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                       client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-welcome-4") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1120,7 +1120,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                         client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-help-1") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1140,7 +1140,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                           client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-help-2") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص **');
            
    
          
@@ -1193,7 +1193,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                               client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-bc-1") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1213,7 +1213,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                             client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-bc-2") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1234,7 +1234,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                             client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-bc-3") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1255,7 +1255,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
                               client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-bc-4") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1308,7 +1308,7 @@ client.on('message', message => {
    client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help-js-games-1") {
-         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         message.channel.send('**لقد تم ارسال الكود في الخاص  **');
            
    
          
@@ -1326,7 +1326,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-2") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص **');
          
  
    
@@ -1343,7 +1343,7 @@ https://pastebin.com/sgtxADHu
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-3") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1360,7 +1360,7 @@ https://paste.drhack.net/?ea5251c741026c3d#B/AW3E7mlppg8obzbnEIGgbjSc6PRFHnDqBTe
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-4") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1377,7 +1377,7 @@ https://paste.drhack.net/?eae21f05292515ca#Q0wYzgc1EWSI9aPafHGGTpKqLN9yypU02d/5B
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-4") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1394,7 +1394,7 @@ https://pastebin.com/ELJPi6Ef
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-5") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1411,7 +1411,7 @@ https://pastebin.com/kuEXN67Z
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-6") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1428,7 +1428,7 @@ https://pastebin.com/ELJPi6Ef
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-7") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1445,7 +1445,7 @@ https://pastebin.com/7xpL4KB4
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-8") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1462,7 +1462,7 @@ https://pastebin.com/Rh2BLmZC
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-9") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1479,7 +1479,7 @@ https://pastebin.com/ADDKWuse
 client.on('message', message => {
   if (message.author.bot) return;
    if (message.content === prefix + "help-js-games-10") {
-   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+   message.channel.send('**لقد تم ارسال الكود في الخاص  **');
          
  
    
@@ -1492,5 +1492,61 @@ https://pastebin.com/PfvYF1ak
  
   }
 });
+
+
+
+client.on('message',async message => {
+ 
+let mention = message.mentions.members.first();
+ 
+let Room = client.channels.get('545889783529078784');
+ 
+if(message.content.startsWith(prefix + "رفض")) {
+ 
+if(message.guild.id !== '525434548939653151') return;
+ 
+ if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
+ 
+ 
+if(!mention) return message.reply("منشن شخص");
+ 
+ 
+ 
+Room.send(`
+** العضو :** ${mention}
+ لقد تم رفضك `);
+ 
+}
+ 
+});
+ 
+ 
+   
+client.on('message',async message => {
+ 
+let mention = message.mentions.members.first();
+ 
+let Room = client.channels.get('545889783529078784');
+ 
+if(message.content.startsWith(prefix + "قبول")) {
+ 
+if(message.guild.id !== '525434548939653151') return;
+ 
+ if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
+ 
+ 
+if(!mention) return message.reply("منشن شخص");
+ 
+ 
+ 
+Room.send(`
+** العضو :** ${mention}
+ لقد تم قبولك `);
+ 
+}
+ 
+});
+
+
 
 client.login(process.env.BOT_TOKEN);
