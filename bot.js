@@ -348,7 +348,7 @@ if(!message.channel.guild) return message.reply(' ');
 
     let thisFalse;
 
-    message.channel.send(' **| من فضلك اكتب الكود الأن...  **').then(msg => {
+    message.channel.send(' ** من فضلك اكتب الكود الأن...  **').then(msg => {
 
 
 
@@ -370,7 +370,7 @@ if(!message.channel.guild) return message.reply(' ');
 
       let boi;
 
-      msg.edit(' **| من فضلك اكتب وصف الكود الأن...  **').then(msg => {
+      msg.edit(' ** من فضلك اكتب وصف الكود الأن...  **').then(msg => {
 
 
 
@@ -392,7 +392,7 @@ if(!message.channel.guild) return message.reply(' ');
 
             let boi2;
 
-            msg.edit(' **| من فضلك اكتب من صنع هذا الكود الأن... ✏ **').then(msg => {
+            msg.edit(' ** من فضلك اكتب من صنع هذا الكود الأن...  **').then(msg => {
 
 
 
