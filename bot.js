@@ -388,4 +388,1112 @@ antispam(client, {
   time: 10, // عدد الوقت الي يجلس لين تسحب رتبة الميوت من الشخص الحسبة برمجية وليست كتابية 
 });
 
+const adminprefix = "#";
+ 
+
+ 
+ 
+
+ 
+const developers = ["525434548939653151"]//Toxic Codes
+client.on('message', message => {//Toxic Codes
+    var argresult = message.content.split(` `).slice(1).join(' ');//Toxic Codes
+      if (!developers.includes(message.author.id)) return;
+     
+  if (message.content.startsWith(adminprefix + 'setg')) {
+    client.user.setGame(argresult);
+      message.channel.send(`**✅   ${argresult}**`)
+  } else
+     if (message.content === (adminprefix + "leave")) {//Toxic Codes
+    message.guild.leave();   //Toxic Codes
+  } else  
+  if (message.content.startsWith(adminprefix + 'setw')) {
+  client.user.setActivity(argresult, {type:'WATCHING'});//Toxic Codes
+      message.channel.send(`**✅   ${argresult}**`)//Toxic Codes
+  } else
+  if (message.content.startsWith(adminprefix + 'setl')) {
+  client.user.setActivity(argresult , {type:'LISTENING'});
+      message.channel.send(`**✅   ${argresult}**`)//Toxic Codes
+  } else
+  if (message.content.startsWith(adminprefix + 'sets')) {
+    client.user.setGame(argresult, "https://www.twitch.tv/zero");
+      message.channel.send(`**✅**`)//Toxic Codes
+  }
+  if (message.content.startsWith(adminprefix + 'setname')) {
+  client.user.setUsername(argresult).then
+      message.channel.send(`Changing The Name To ..**${argresult}** `)
+} else
+  if (message.content.startsWith(adminprefix + 'setprefix')) {//Toxic Codes
+  client.user.setPrefix(argresult).then
+      message.channel.send(`Changing Prefix ..**${argresult}** `)//Toxic Codes
+} else
+if (message.content.startsWith(adminprefix + 'setavatar')) {//Toxic Codes
+  client.user.setAvatar(argresult);
+    message.channel.send(`Changing The Avatar To :**${argresult}** `);//Toxic Codes
+}
+});//Toxic Codes
+ 
+ 
+
+ 
+   client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in Toxic Codes Server 💬`⦁",' ‎ ')
+  .addField("❧  **#help-js-source    ➺      ⦁ قسم السورس الأساسي** ⦁",' ‎ ')
+   .addField("❧  **#help-js-admin     ➺      ⦁ قسم الأكواد الإدارية** ⦁",' ‎ ')
+     .addField("❧  **#help-js-general   ➺      ⦁ قسم الأكواد العامة*** ⦁",' ‎ ')
+       .addField("❧  **#help-js-welcome   ➺      ⦁ قسم أكواد الترحيب** ⦁",' ‎ ')
+           .addField("❧  **#help-js-help      ➺      ⦁ قسم أكواد الهلب** ⦁",' ‎ ')
+            .addField("❧  **#help-js-bc        ➺      ⦁ قسم أكواد البرودكاست** ⦁",' ‎ ')
+                 .addField("❧  **#help-js-games        ➺      ⦁ قسم اكواد الالعاب** ⦁",' ‎ ')
+ .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+     client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-source") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-source-1  ➺      ⦁ السورس الأساسي**⦁",' ‎ ')
+   .addField("**#help-js-source-2  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+     .addField("**#help-js-source-3  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+       .addField("**#help-js-source-4  ➺      ⦁ السورس الأساسي مع الستريمنق ومعلومات البوت** ⦁",' ‎ ')
+     
+ .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+ 
+  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود السورس الأساسي**
+ https://pastebin.com/xGu8E5jA
+`);
+ 
+    }
+});  
+ 
+  client.on("message", message => {
+ 
+            if (message.content.startsWith(prefix + "bc4")) {
+                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+  let args = message.content.split(" ").slice(1);
+  var argresult = args.join(' ');
+  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
+ m.send(`${argresult}\n ${m}`);
+})
+ message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`);
+ message.delete();
+};    
+});
+ 
+ 
+    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الأساسي مع الستريمنق ومعلومات البوت**
+ https://pastebin.com/rJCgs6he
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الأساسي مع الواتشينق**
+ https://pastebin.com/pYgG5HRi
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-source-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **السورس الاساسي مع البنق**
+ https://pastebin.com/1pX8Zdrw
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+       client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-admin") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+ .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+ .addField("**#help-js-admin-1  ➺      ⦁ كود الباند**⦁",' ‎ ')
+ .addField("**#help-js-admin-2  ➺      ⦁ كود الكيك** ⦁",' ‎ ')
+ .addField("**#help-js-admin-3  ➺      ⦁ كود مسح الشات مع عدد وشبيه بالبروبوت** ⦁",' ‎ ')
+ .addField("**#help-js-admin-4  ➺      ⦁ كود فتح وتقفيل الشات** ⦁",' ‎ ')
+ .addField("**#help-js-admin-5  ➺      ⦁  كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه** ⦁",' ‎ ')
+ .addField("**#help-js-admin-6  ➺      ⦁  كود لانشاء شات كتابي** ⦁",' ‎ ')  
+ .addField("**#help-js-admin-7  ➺      ⦁  كود لانشاء روم صوتي** ⦁",' ‎ ')
+ .addField("**#help-js-admin-8  ➺      ⦁  invite : كود دعوه البوت مثال ** ⦁",' ‎ ')  
+ .addField("**#help-js-admin-9  ➺ ⦁  كود الاوتو رول التفعيل داخل السيرفر ** ⦁",' ‎ ')
+     
+     
+     
+ .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+ 
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الباند**
+ https://pastebin.com/YZAXKYUB
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الكيك**
+ https://pastebin.com/0cNVLm1a
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود مسح الشات ( الكلير ) نفس سبيد بوت**
+ https://pastebin.com/QERKkTtk
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+                client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود فتح وتقفيل الشات**
+ https://pastebin.com/gb4me9bS
+`);
+ 
+    }
+});  
+ 
+ 
+                  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-5") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** كود رابط يرسله خاص ل 100شخص لمدة 24 ساعه**
+ https://pastebin.com/Xe5kzVUw
+`);
+ 
+    }
+});
+ 
+         client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-6") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** كود لانشاء شات كتابي**
+ https://pastebin.com/ChtbaGu2
+`);
+ 
+    }
+});
+ 
+           client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-7") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** كود لانشاء روم صوتي**
+ https://pastebin.com/Y2SWEE6N
+`);
+ 
+    }
+});
+ 
+ 
+ 
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-8") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **invite : كود دعوه البوت مثال **
+ https://pastebin.com/hP9VQpFR
+`);
+ 
+    }
+});  
+ 
+ 
+          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-admin-9") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الاوتو رول التفعيل داخل السيرفر **
+ https://pastebin.com/7tVEa317
+`);
+ 
+    }
+});  
+ 
+ 
+ 
+ 
+ 
+ 
+         client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-general") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+ .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+ .addField("**#help-js-general-1  ➺      ⦁ كود البنق **⦁",' ‎ ')
+ .addField("**#help-js-general-2  ➺      ⦁ كود القرعة ** ⦁",' ‎ ')
+ .addField("**#help-js-general-3  ➺      ⦁ كود الافتار  ** ⦁",' ‎ ')   
+ .addField("**#help-js-general-4  ➺      ⦁ كود معلومات السيرفر ** ⦁",' ‎ ')
+ .addField("**#help-js-general-5  ➺      ⦁ كود المعلومات الشخصية** ⦁",' ‎ ')
+ .addField("**#help-js-general-6  ➺      ⦁ كود كت تويت** ⦁",' ‎ ')  
+ .addField("**#help-js-general-7  ➺      ⦁ كود صراحه** ⦁",' ‎ ')     
+     
+     
+ .setFooter('js - Codes')
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+                  client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود البنق**
+ https://pastebin.com/iCmTpWJX
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود القرعة**
+ https://pastebin.com/eZHv8NPC
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الافاتار**
+ https://pastebin.com/aBzSWJxy
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود معلومات السيرفر**
+ https://pastebin.com/Z082PXt3
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-5") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود المعلومات الشخصية**
+ https://pastebin.com/ZMhAPtSB
+`);
+ 
+    }
+});
+ 
+ 
+                client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-6") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود كت تويت**
+ https://pastebin.com/fak2SQsm
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                    client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-general-7") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود صراحه **
+ https://pastebin.com/NC32yt0v
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+           client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-welcome") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-welcome-1  ➺      ⦁ كود ترحيب مع ذكر رقم العضو **⦁",' ‎ ')
+   .addField("**#help-js-welcome-2  ➺      ⦁ كود الترحيب مع صورة ** ⦁",' ‎ ')
+     .addField("**#help-js-welcome-3  ➺      ⦁ كود مغادرة العضو ** ⦁",' ‎ ')
+           .addField("**#help-js-welcome-4  ➺      ⦁ كود تم دعوته بواسطة ** ⦁",' ‎ ')
+ 
+     
+           
+ .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود ترحيب بصورة**
+ https://paste.drhack.net/?ded81e2b02cab246#Oej+XdoRpbGnlTET2iH2zKdVCn+WFNCUatLLtOU1urs=
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود الترحيب في الخاص مع رقم العضو**
+ https://paste.drhack.net/?854e74d128b66da8#3menzqbk4bSRPItx7czUQhc1iuwjQRZTyaEVF6ZUktE=
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖**كود مغادرة العضو**
+ https://pastebin.com/8Da43txR
+`);
+ 
+    }
+});
+ 
+ 
+ 
+                      client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-welcome-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود تم دعوته بواسطة**
+ https://pastebin.com/ihCR8nhW
+`);
+ 
+    }
+});
+ 
+ 
+ 
+             client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-help") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-help-1  ➺      ⦁ كود هلب مع امبد يرسل بنفس الشات **⦁",' ‎ ')
+   .addField("**#help-js-help-2  ➺      ⦁ كود هلب مزخرف بدون امبد ويرسل عالخاص ** ⦁",' ‎ ')
+           
+ .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                        client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-help-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود هلب مع امبد يرسل بالخاص**
+ https://pastebin.com/ZC0FHb0c
+`);
+ 
+    }
+});
+ 
+ 
+ 
+                          client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-help-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود هلب بدون امبد ويرسل عالخاص**
+ https://pastebin.com/MuCMUQYc
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+               client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content  === prefix + "help-js-bc") {
+          const embed = new Discord.RichEmbed()
+ 
+ 
+   .setColor('RANDOM')
+  .setTimestamp()
+ 
+  .addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+  .addField("**#help-js-bc-1  ➺      ⦁ برودكاست + للكل + مطور **⦁",' ‎ ')
+  .addField("**#help-js-bc-2  ➺      ⦁ برودكاست + للكل + غير مطور ** ⦁",' ‎ ')
+  .addField("**#help-js-bc-3  ➺      ⦁ برودكاست + للأونلاين + مع منشن + غير مطور **⦁",' ‎ ')
+  .addField("**#help-js-bc-4  ➺      ⦁ برودكاست + للكل + مع منشن + غير مطور ** ⦁",' ‎ ')      
+           
+ .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+    }
+});
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل **
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+                            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-2") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                            client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-3") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ ** برودكاست + للأونلاين + مع منشن + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+                              client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-bc-4") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **برودكاست + للكل + مع منشن + غير مطور**
+ https://pastebin.com/n2SyjdwH
+`);
+ 
+    }
+});
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content  === prefix + "help-js-games") {
+        const embed = new Discord.RichEmbed()
+ 
+ 
+ .setColor('RANDOM')
+.setTimestamp()
+ 
+.addField("⦁`All types of codes in js - Codes Server 💬`⦁",' ‎ ')
+.addField("**#help-js-games-1  ➺      ⦁ لعبة اسئلة فورت نايت**⦁",' ‎ ')
+ .addField("**#help-js-games-2  ➺      ⦁ لعبة صراحة** ⦁",' ‎ ')
+     .addField("**#help-js-games-3  ➺      ⦁ لعبة كت تويت** ⦁",' ‎ ')
+       .addField("**#help-js-games-4  ➺      ⦁ لعبة لو خيروك** ⦁",' ‎ ')
+       .addField("**#help-js-games-5  ➺      ⦁ لعبة مريم** ⦁",' ‎ ')
+       .addField("**#help-js-games-6  ➺      ⦁ لعبة عقاب** ⦁",' ‎ ')
+       .addField("**#help-js-games-7  ➺      ⦁ لعبة فكك تحتاج جيسون** ⦁",' ‎ ')
+       .addField("**#help-js-games-8  ➺      ⦁ لعبة قرعة** ⦁",' ‎ ')
+       .addField("**#help-js-games-9  ➺      ⦁ لعبة اكس او** ⦁",' ‎ ')
+       .addField("**#help-js-games-10  ➺      ⦁ لعبة اسرع كتابة** ⦁",' ‎ ')
+   .setFooter('js - Codes')
+ 
+ 
+   message.channel.send({embed});
+ 
+ 
+    }
+});
+   client.on('message', message => {
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-js-games-1") {
+         message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+           
+   
+         
+ 
+ 
+ message.author.sendMessage(`
+ 
+ ❖ **كود اسئلة لعبة فورت نايت**
+ https://pastebin.com/ycDVzyup
+`);
+ 
+    }
+});  
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-2") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة صراحة**
+https://pastebin.com/sgtxADHu
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-3") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة كت تويت**
+https://paste.drhack.net/?ea5251c741026c3d#B/AW3E7mlppg8obzbnEIGgbjSc6PRFHnDqBTeOk+svw=
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-4") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة لو خيروك**
+https://paste.drhack.net/?eae21f05292515ca#Q0wYzgc1EWSI9aPafHGGTpKqLN9yypU02d/5BSnmp/M=
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-4") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة مريم**
+https://pastebin.com/ELJPi6Ef
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-5") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة مريم **
+https://pastebin.com/kuEXN67Z
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-6") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة عقاب**
+https://pastebin.com/ELJPi6Ef
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-7") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة فكك**
+https://pastebin.com/7xpL4KB4
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-8") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود قرعة**
+https://pastebin.com/Rh2BLmZC
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-9") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة اكس او**
+https://pastebin.com/ADDKWuse
+`);
+ 
+  }
+});
+ 
+client.on('message', message => {
+  if (message.author.bot) return;
+   if (message.content === prefix + "help-js-games-10") {
+   message.channel.send('**لقد تم ارسال الكود في الخاص :ok_hand: **');
+         
+ 
+   
+ 
+ 
+message.author.sendMessage(`
+❖ **كود لعبة اسرع كتابة**
+https://pastebin.com/PfvYF1ak
+`);
+ 
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
