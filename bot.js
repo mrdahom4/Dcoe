@@ -27,8 +27,7 @@ client.on('ready', () => {
 });
 
 
-client.on('ready', function(){
-    var ms = 20000 ;    
+client.on('ready', function(){    
     var setGame = ['Js - Codes'];    
     var i = -1;    
     var j = 0;    
@@ -45,15 +44,7 @@ j = 1;
     
 }); 
 
-client.on('message', message => {
-  if (message.content.startsWith('#play')) {
-    const voiceChannel1 = message.member.voiceChannel1;
-    voiceChannel1.join()
-      .then(connnection => {
 
-      });
-  }
-})
 
 var prefix = "#"
 client.on('message', async msg => {
