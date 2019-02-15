@@ -412,7 +412,7 @@ if(!message.channel.guild) return message.reply(' ');
 
               boi2 = collected.first().content;
 
-      msg.edit(' **| [ هل انت متأكد من نشر الكود؟ | [ نعم ] او [ لا**');
+      msg.edit(' ** [ هل انت متأكد من نشر الكود؟ [ نعم ] او [ لا**');
 
  message.channel.awaitMessages(response => response.content === 'نعم' || 'لا' && filter,{
 
@@ -440,7 +440,7 @@ if(!message.channel.guild) return message.reply(' ');
 
           if(thisFalse === false) return;
 
-          msg.edit(' تم بنجاح نشر كودك في روم الاكواد**');
+          msg.edit('** تم بنجاح نشر كودك في روم الاكواد**');
 
           collected.first().delete();
 
@@ -454,7 +454,10 @@ ${thisMessage}\`\`\`
 
 **تم النشر بواسطة**: ${message.author}
 
-**المصدر / الشخص الذي صنع الكود**: ${boi2}`);
+**المصدر / الشخص الذي صنع الكود**: ${boi2}
+
+\`\` Js - Codes\`\` كل الحقوق محفوظة لدى
+`);
 
         }
 
