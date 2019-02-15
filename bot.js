@@ -323,9 +323,55 @@ client.on('message', async xkiller => {
   client.on("guildMemberAdd", member => {
     member.createDM().then(function (channel) {
         return channel.send(`**
-``Welcome To Js - Codes``
+\`\`\`Welcome To Js - Codes\`\`\`
 		${member}**`) 
     }).catch(console.error)
 })
 
+client.on('message', async (message) => {
+
+    if (message.content.startsWith('#js')) {
+            if(!message.member.roles.find('name', "Js - King Support", "Js - Support Gold", "Js - Support Plus", "Js - Support", "Js - Admin", "Js - Developer", "Js - Minister")) return message.reply(`**I can't complete this command because you don't have T | Developer Rank!**`);
+
+      await message.channel.send("**اكتب الكود بدون ايمبيد**").then(e => {
+      let filter = m => m.author.id === message.author.id
+      let lan = '';
+      let md = '';
+      let br = '';
+      let chaLan = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
+        .then(collected => {
+          lan = collected.first().content
+          collected.first().delete()
+          e.delete();
+          message.channel.send('**وصف الكود**').then(m => {
+          let chaMd = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
+          .then(co => {
+            md = co.first().content
+            co.first().delete()
+            m.delete();
+            message.channel.send('**من صنعه؟**').then(ms => {
+            let br = message.channel.awaitMessages(filter, { max: 1, time: 400000, errors: ['time'] })
+              .then(col => {
+                br = col.first().content
+                col.first().delete()
+                ms.delete()
+                
+                  message.channel.send('**جاري العرض ..**').then(b => {
+                  setTimeout(() => { 
+                    b.edit(`**تم العرض **`)
+                  },2000);
+                  var gg = message.guild.channels.find('name', 'codes-js')
+                  if(!gg) return;
+
+                     
+                      gg.send(`||@here||  \n \n الكود :\n\`\`\`js\n${lan}\`\`\`\n  **وصف الكود :\n ${md} \n \n تم صنعه من قبل : ${br} \n تم نشره من قبل : <@${message.author.id}> ** \n  \n __\` كل الحقوق محفوظة لدى Tree Codes\`__  `);
+                  })
+                })
+              })
+            })
+          })
+        })
+      })
+    }
+  })
 client.login(process.env.BOT_TOKEN);
