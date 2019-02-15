@@ -44,7 +44,7 @@ client.on ("guildMemberAdd", member => {
   
 })
 
-Yousef.on ("guildMemberRemove", member => {
+client.on ("guildMemberRemove", member => {
    
 })
 
