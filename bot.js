@@ -1494,7 +1494,7 @@ https://pastebin.com/PfvYF1ak
 });
 
 
-
+var prefix = "#"
 client.on('message',async message => {
  
 let mention = message.mentions.members.first();
@@ -1521,7 +1521,7 @@ Room.send(`
 });
  
  
-   
+var prefix = "#"   
 client.on('message',async message => {
  
 let mention = message.mentions.members.first();
