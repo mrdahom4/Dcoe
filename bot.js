@@ -253,7 +253,7 @@ client.on('message', async xkiller => {
    
       let fillter = m => m.author.id === xkiller.author.id
    
-      await xkiller.channel.send("**اسمك - من ون - كم عمرك**").then(e => {
+      await xkiller.channel.send("**ما اسمك وعمرك . . **").then(e => {
    
         xkiller.channel.awaitMessages(fillter, { time: 60000, max: 1 })
    
@@ -264,7 +264,7 @@ client.on('message', async xkiller => {
         co.first().delete();
    
    
-       e.edit(`**ماذا تعرف عن الجافا اسكربت**`)
+       e.edit(`**خبرتك بالجافا سكربت . .**`)
    
   xkiller.channel.awaitMessages(fillter, { time: 60000, max: 1 })
    
@@ -275,7 +275,7 @@ client.on('message', async xkiller => {
           col.first().delete();
    
    
-            e.edit(`**ما اسم الخوادم التي تعرفها**`)
+            e.edit(`** ؟ async  ما معنى كلمه**`)
    
   xkiller.channel.awaitMessages(fillter, { time: 60000, max: 1 })
    
@@ -296,8 +296,7 @@ client.on('message', async xkiller => {
    
               }, 3000)
    
-              xkilleryt.send(`**
-1: **${lang}**
+              xkilleryt.send(`**1: **${lang}**
 2 : **${time}**
 3 : **${expe}**
 4 : ${xkiller.author} 
