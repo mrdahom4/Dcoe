@@ -1496,6 +1496,56 @@ https://pastebin.com/PfvYF1ak
 
 
 
+client.on('message',async message => {
+ 
+let mention = message.mentions.members.first();
+ 
+let Room = client.channels.get('545889783529078784');
+ 
+if(message.content.startsWith("رفض")) {
+ 
+if(message.guild.id !== '525434548939653151') return;
+ 
+ if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
+ 
+ 
+if(!mention) return message.reply("منشن شخص");
+ 
+ 
+ 
+Room.send(`
+** العضو :** ${mention}
+ لقد تم رفضك `);
+ 
+}
+ 
+});
+ 
+ 
+client.on('message',async message => {
+ 
+let mention = message.mentions.members.first();
+ 
+let Room = client.channels.get('545889783529078784');
+ 
+if(message.content.startsWith("قبول")) {
+ 
+if(message.guild.id !== '525434548939653151') return;
+ 
+ if (!message.member.hasPermission("MANAGE_ROLES")) return message.reply("**للأسف ليس لديك صلاحية**").then(msg => msg.delete(5000));
+ 
+ 
+if(!mention) return message.reply("منشن شخص");
+ 
+ 
+ 
+Room.send(`
+** العضو :** ${mention}
+ لقد تم قبولك `);
+ 
+}
+ 
+});
 
 
 client.login(process.env.BOT_TOKEN);
