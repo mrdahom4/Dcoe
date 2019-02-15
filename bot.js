@@ -1,5 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const ytdl = require("ytdl-core");
+const { Client, Util } = require('discord.js');
+const getYoutubeID = require('get-youtube-id');
+const fetchVideoInfo = require('youtube-info');
+const YouTube = require('simple-youtube-api');
+const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
+const queue = new Map();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -24,26 +31,21 @@ client.on('ready', () => {
   console.log('╚[════════════]╝')
   console.log('')
   console.log('')
+  client.user.setActivity('Js - Codes')
 });
 
 
-client.on('ready', function(){    
-    var setGame = ['Js - Codes'];    
-    var i = -1;    
-    var j = 0;    
-    setInterval(function (){    
-        if( i == -1 ){    
-j = 1;    
-       }    
-        if( i == (setGame.length)-1 ){    
-            j = -1;    
-      }    
-       i = i+j;    
-        client.user.setGame(setGame[i],`http://www.twitch.tv/n3k4a`);    
-}, ms);    
-    
-}); 
 
+const p1rtly = new Discord.Client();
+p1rtly.on('message', message => {
+  if (message.content.startsWith('#play')) {
+    const voiceChannel1 = message.member.voiceChannel1;
+    voiceChannel1.join()
+      .then(connnection => {
+
+      });
+  }
+})
 
 
 var prefix = "#"
